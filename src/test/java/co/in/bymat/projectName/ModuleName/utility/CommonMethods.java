@@ -74,5 +74,9 @@ public class CommonMethods extends TestBase_B9 {
 		test.log(LogStatus.PASS, "User selected the index " + VisibleText);
 	}
 	
-	
+	public static void clickOnLink (String LinkName, String LinkNameText) {
+		driver.findElement(By.linkText(or.getProperty(LinkName))).click();
+		test.log(LogStatus.PASS, "User clicked on " + LinkNameText);
+		test.log(LogStatus.PASS, "User selected the index " + LinkNameText);
+	}
 }
