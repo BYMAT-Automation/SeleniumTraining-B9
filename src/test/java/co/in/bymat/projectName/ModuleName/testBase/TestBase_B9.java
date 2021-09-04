@@ -2,9 +2,11 @@ package co.in.bymat.projectName.ModuleName.testBase;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -37,6 +39,7 @@ public class TestBase_B9 { // Heart of Framework
 	public static ExcelReader excel;
 	public static String ScreenShot;
 	public static String testCaseName;
+	public static Hashtable<String, String> HT_RunMode = new Hashtable();
 	
 	@BeforeSuite
 		public void initialization() throws IOException {
@@ -56,6 +59,7 @@ public class TestBase_B9 { // Heart of Framework
 		String timestamp = new SimpleDateFormat("YYYY_MM_dd_HH_mm_SS").format(new Date());
 		report = new ExtentReports(System.getProperty("user.dir") + "\\src\\test\\resources\\executionReports\\ExecutionReport_"+timestamp+".html");
 		
+		loadHashTable();
 	}
 	
 	//@BeforeMethod
@@ -141,6 +145,24 @@ public class TestBase_B9 { // Heart of Framework
 		DataCollection dc = new DataCollection(excel, "Test_Data", testCaseName);
 		
 		return dc.dataArray();
+	}
+	
+	public static void loadHashTable() {
+		
+		int rows = excel.getRowCount("TestCases");
+		System.out.println("Total number of rows: " +rows);
+		
+		for(int i = 2; i<= rows; i++) {
+			
+			String key = excel.getCellData("TestCases", "TestCase_Name", i);
+			
+			String value = excel.getCellData("TestCases", "Run_Mode", i);
+			
+			HT_RunMode.put(key, value);
+		}
+		
+		System.out.println("My Run mode HT data is:- " +HT_RunMode);
+		
 	}
 
 }

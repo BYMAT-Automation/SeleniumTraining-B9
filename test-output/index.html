@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,15 +102,34 @@
                     <div class="method-list-content failed suite-Regression">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4" hash-for-method="loginToMyStore4({Name=Madar, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, C...)">loginToMyStore4({Name=Madar, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, C...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5" hash-for-method="loginToMyStore5({Name=SivaTC5, Page_Title=My St, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City...)">loginToMyStore5({Name=SivaTC5, Page_Title=My St, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods skipped suite-Regression"> (hide)</a> <!-- hide-methods skipped suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods skipped suite-Regression"> (show)</a> <!-- show-methods skipped suite-Regression -->
+                    </span>
+                    <div class="method-list-content skipped suite-Regression">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2" hash-for-method="loginToMyStore2">loginToMyStore2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4" hash-for-method="loginToMyStore4">loginToMyStore4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6" hash-for-method="loginToMyStore6">loginToMyStore6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Regression -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,17 +145,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2" hash-for-method="loginToMyStore2({Name=Lipika, Page_Title=My Store, Email_ID=Lipika@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, ...)">loginToMyStore2({Name=Lipika, Page_Title=My Store, Email_ID=Lipika@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore3" hash-for-method="loginToMyStore3({Name=Siva, Page_Title=My Store, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City...)">loginToMyStore3({Name=Siva, Page_Title=My Store, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6" hash-for-method="loginToMyStore6({Name=MadarTC6, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT...)">loginToMyStore6({Name=MadarTC6, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -154,29 +163,6 @@
           <div class="suite-Regression-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginToMyStore4({Name=Madar, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, C...)">
-                  </a> <!-- loginToMyStore4({Name=Madar, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, C...) -->
-                  <span class="method-name">loginToMyStore4</span>
-                  <span class="parameters">({Name=Madar, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City=Pune, ContactNo=1234567893})</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
-	at org.openqa.selenium.By.xpath(By.java:92)
-	at co.in.bymat.projectName.ModuleName.utility.CommonMethods.getText(CommonMethods.java:41)
-	at co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4.loginToMyStore4(LoginToMyStore4.java:32)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
-          <div class="suite-Regression-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -188,45 +174,70 @@
                   <span class="parameters">({Name=SivaTC5, Page_Title=My St, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City=HYD, ContactNo=1234567893})</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [My St] but found [My Store]
 	at co.in.bymat.projectName.ModuleName.pages.HomePage.createAnAccount(HomePage.java:16)
-	at co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5.loginToMyStore5(LoginToMyStore5.java:28)
+	at co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5.loginToMyStore5(LoginToMyStore5.java:33)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Regression-class-failed -->
-          <div class="suite-Regression-class-passed">
+          <div class="suite-Regression-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToMyStore2({Name=Lipika, Page_Title=My Store, Email_ID=Lipika@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, ...)">
-                  </a> <!-- loginToMyStore2({Name=Lipika, Page_Title=My Store, Email_ID=Lipika@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, ...) -->
+                  <a name="loginToMyStore2">
+                  </a> <!-- loginToMyStore2 -->
                   <span class="method-name">loginToMyStore2</span>
-                  <span class="parameters">({Name=Lipika, Page_Title=My Store, Email_ID=Lipika@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City=Odisa, ContactNo=1234567893})</span>
+                  <div class="stack-trace">org.testng.SkipException: Run mode of test case is set to N
+	at co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2.testCaseName(LoginToMyStore2.java:24)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToMyStore4">
+                  </a> <!-- loginToMyStore4 -->
+                  <span class="method-name">loginToMyStore4</span>
+                  <div class="stack-trace">org.testng.SkipException: Run mode of test case is set to N
+	at co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4.testCaseName(LoginToMyStore4.java:24)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToMyStore6({Name=MadarTC6, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT...)">
-                  </a> <!-- loginToMyStore6({Name=MadarTC6, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT...) -->
+                  <a name="loginToMyStore6">
+                  </a> <!-- loginToMyStore6 -->
                   <span class="method-name">loginToMyStore6</span>
-                  <span class="parameters">({Name=MadarTC6, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City=Pune, ContactNo=1234567893})</span>
+                  <div class="stack-trace">org.testng.SkipException: Run mode of test case is set to N
+	at co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6.testCaseName(LoginToMyStore6.java:24)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
+          </div> <!-- suite-Regression-class-skipped -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -321,34 +332,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginToMyStore')
-data.setCell(0, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore')
-data.setCell(0, 3, 26312);
+data.setCell(0, 1, 'loginToMyStore3')
+data.setCell(0, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore3')
+data.setCell(0, 3, 25339);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginToMyStore2')
-data.setCell(1, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2')
-data.setCell(1, 3, 26089);
+data.setCell(1, 1, 'loginToMyStore')
+data.setCell(1, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore')
+data.setCell(1, 3, 22980);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginToMyStore3')
-data.setCell(2, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore3')
-data.setCell(2, 3, 24002);
+data.setCell(2, 1, 'loginToMyStore5')
+data.setCell(2, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5')
+data.setCell(2, 3, 14614);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginToMyStore4')
-data.setCell(3, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4')
-data.setCell(3, 3, 21207);
+data.setCell(3, 1, 'loginToMyStore6')
+data.setCell(3, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginToMyStore6')
-data.setCell(4, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6')
-data.setCell(4, 3, 19916);
+data.setCell(4, 1, 'loginToMyStore2')
+data.setCell(4, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginToMyStore5')
-data.setCell(5, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5')
-data.setCell(5, 3, 16492);
+data.setCell(5, 1, 'loginToMyStore4')
+data.setCell(5, 2, 'co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4')
+data.setCell(5, 3, 0);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -426,78 +437,85 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">testCaseName</span>
-                <span class="method-start">1125 ms</span>
+                <span class="method-start">603 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginToMyStore({Name=Deepali, Page_Title=My Store, Email_ID=Deepali@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT...)</span>
-                <span class="method-start">1158 ms</span>
+                <span class="method-start">609 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testCaseName</span>
-                <span class="method-start">34361 ms</span>
+                <span class="method-start">29828 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">loginToMyStore2({Name=Lipika, Page_Title=My Store, Email_ID=Lipika@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, ...)</span>
-                <span class="method-start">34366 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore3</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testCaseName</span>
-                <span class="method-start">67243 ms</span>
+                <span class="method-start">29839 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginToMyStore3({Name=Siva, Page_Title=My Store, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City...)</span>
-                <span class="method-start">67248 ms</span>
+                <span class="method-start">29839 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testCaseName</span>
-                <span class="method-start">97975 ms</span>
+                <span class="method-start">61438 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginToMyStore4({Name=Madar, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, C...)</span>
-                <span class="method-start">97980 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testCaseName</span>
-                <span class="method-start">126079 ms</span>
+                <span class="method-start">61443 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginToMyStore5({Name=SivaTC5, Page_Title=My St, Email_ID=siva@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT, City...)</span>
-                <span class="method-start">126083 ms</span>
+                <span class="method-start">61443 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testCaseName</span>
-                <span class="method-start">150208 ms</span>
+                <span class="method-start">82538 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">loginToMyStore6({Name=MadarTC6, Page_Title=My Store, Email_ID=Mandar@gmail.com, Sr.No=1, Page_Text=CREATE AN ACCOUNT...)</span>
-                <span class="method-start">150211 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">176806 ms</span>
+                <span class="method-start">82569 ms</span>
               </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginToMyStore2</span>
+                <span class="method-start">-1630229327010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginToMyStore4</span>
+                <span class="method-start">-1630229327010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginToMyStore6</span>
+                <span class="method-start">-1630229327010 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

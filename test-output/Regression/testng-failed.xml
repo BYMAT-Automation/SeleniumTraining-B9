@@ -6,9 +6,17 @@
   </listeners>
   <test thread-count="5" name="XYZ-functionality(failed)">
     <classes>
+      <class name="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2">
+        <methods>
+          <include name="testCaseName"/>
+          <include name="initialization"/>
+          <include name="endReport"/>
+          <include name="loginToMyStore2"/>
+        </methods>
+      </class> <!-- co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore2 -->
       <class name="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore4">
         <methods>
-          <include name="loginToMyStore4" invocation-numbers="0"/>
+          <include name="loginToMyStore4"/>
           <include name="initialization"/>
           <include name="endReport"/>
           <include name="testCaseName"/>
@@ -22,6 +30,14 @@
           <include name="loginToMyStore5" invocation-numbers="0"/>
         </methods>
       </class> <!-- co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore5 -->
+      <class name="co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6">
+        <methods>
+          <include name="initialization"/>
+          <include name="endReport"/>
+          <include name="testCaseName"/>
+          <include name="loginToMyStore6"/>
+        </methods>
+      </class> <!-- co.in.bymat.projectName.ModuleName.testCases.LoginToMyStore6 -->
     </classes>
   </test> <!-- XYZ-functionality(failed) -->
 </suite> <!-- Failed suite [Regression] -->

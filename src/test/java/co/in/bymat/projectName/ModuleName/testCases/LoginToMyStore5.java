@@ -4,6 +4,7 @@ import java.util.Hashtable;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -19,6 +20,10 @@ public class LoginToMyStore5 extends TestBase_B9 {
 	public void testCaseName() {
 
 		testCaseName = this.getClass().getSimpleName();
+		
+		if(!HT_RunMode.get(testCaseName).equalsIgnoreCase("Y")) {
+			throw new SkipException("Run mode of test case is set to N");
+		  }
 
 	}
 
@@ -26,6 +31,8 @@ public class LoginToMyStore5 extends TestBase_B9 {
 	public void loginToMyStore5(Hashtable<String, String> htdata) throws Exception {
 
 		HomePage.createAnAccount(htdata);
+		//PageName.methodName(TestData)
+		//PageName.methodName(TestData)
 
 	}
 

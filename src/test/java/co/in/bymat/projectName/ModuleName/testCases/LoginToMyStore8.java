@@ -22,7 +22,7 @@ public class LoginToMyStore8 extends TestBase_B9{
 	}
 	
 	@Test (dataProvider = "data_Collection")
-	public void loginToMyStore6(Hashtable<String, String> htdata) throws Exception {
+	public void loginToMyStore8(Hashtable<String, String> htdata) throws Exception {
 		
 		Assert.assertEquals(CommonMethods.getPageTitle(), htdata.get("Page_Title")); // Verification
 		test.log(LogStatus.PASS, "Page title has been verified");
