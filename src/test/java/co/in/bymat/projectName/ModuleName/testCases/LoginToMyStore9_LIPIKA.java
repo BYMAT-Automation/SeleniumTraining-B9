@@ -37,6 +37,7 @@ public class LoginToMyStore9_LIPIKA extends TestBase_B9{
 
 		CommonMethods.clickOnWebElement("Submit_btn", "Submit Button"); // Step	
 		
+		// check in source code in GIT to check if Jenkins trigger a build 
 	}
 	
 }
