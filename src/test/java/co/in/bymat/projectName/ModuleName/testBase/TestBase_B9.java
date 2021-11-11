@@ -39,6 +39,7 @@ public class TestBase_B9 { // Heart of Framework
 	public static ExcelReader excel;
 	public static String ScreenShot;
 	public static String testCaseName;
+	
 	public static Hashtable<String, String> HT_RunMode = new Hashtable();
 	
 	@BeforeSuite
